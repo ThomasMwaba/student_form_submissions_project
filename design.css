@@ -1,0 +1,51 @@
+@font-face {
+    font-family:Roboto;
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: Roboto
+
+}
+
+.wrapper-main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+textarea, input {
+    border: 1px solid #ccc;
+
+}
+
+textarea:focus, input:focus,select:focus {
+    outline: 2px solid blue;
+
+}
+
+textarea{
+    width: 100%;
+    height: auto;
+    resize: both;
+}
+
+select {
+    border: 1px solid gray;
+    width: 200px;
+}
+
+button {
+    background-color: rgba(147, 12, 12, 0.099);
+
+}
+
+input[type=text],
+textarea,
+select,
+button {padding: 10px;
+        border: radius 10px;
+}
+button:hover {
+    background-color: bisque;
+    cursor: pointer;
+}

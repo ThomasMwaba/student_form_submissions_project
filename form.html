@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Study Assessment</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <h1>Study and Project Assessment</h1>
+    <section class="wrapper-main">
+        <form action="http://localhost:8000/submit_form" method="post">
+            <h4><label for="firstname">First Name</label></h4>
+            <input required="text" id="firstname" name="firstname" placeholder="First Name"><br><br>
+
+            <h4><label>Select Your Grade</label></h4><br><br>
+            <input type="checkbox" id="grade5" name="grade5">
+            <label for="grade5">Grade 5</label>
+            <input type="checkbox" id="grade6" name="grade6">
+            <label for="grade6">Grade 6</label>
+            <input type="checkbox" id="grade7" name="grade7">
+            <label for="grade7">Grade 7</label><br><br>
+
+            <h4><label for="project_done">Did you work on your project today?</label></h4><br>
+            <select name="yesno" id="yesno">
+                <option value="none">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="message">What did you do?</label><br>
+            <textarea name="message" id="message" placeholder="What did you do?"></textarea><br><br>
+
+            <h4><label for="project_hours">How many hours did you spend on it?</label></h4><br>
+            <select name="project_hours" id="project_hours">
+                <option value="none">None</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+            </select><br><br>
+
+            <h4><label for="subjectname">Which Lesson did you study today?</label></h4><br>
+            <select name="subjectname" id="subjectname">
+                <option value="none">None</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select><br><br>
+
+            <h4><label for="subject_hours">How many hours did you spend on it?</label></h4><br>
+            <select name="subject_hours" id="subject_hours">
+                <option value="none">None</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+            </select><br><br>
+
+            <label for="understanding">What didn't you understand?</label><br>
+            <textarea name="understanding" id="understanding" placeholder="What didn't you understand?"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
