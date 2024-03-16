@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <h1>Study and Project Assessment</h1>
+    <h2 style="color: chocolate;">Learn And Progress Zone</h2>
     <section class="wrapper-main">
-        <form action="http://localhost:8080/submit_form" method="post">
-            <h4><label for="firstname">First Name</label></h4>
-            <input required="text" id="firstname" name="firstname" placeholder="First Name"><br><br>
+    <form action="http://localhost:8080/submit_form" method="post">
+    <h4><label for="name">Name</label></h4>
+    <input required="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
 
-            <h4><label>Select Your Grade</label></h4><br><br>
+    <h4><label for="schoolid">Id Number </label></h4>
+    <input required="text" id="schoolid" name="schoolid" placeholder="Enter Your Id Number"><br><br>
+
+
+            <h4><label>Grade</label></h4><br><br>
             <input type="checkbox" id="grade5" name="grade5">
             <label for="grade5">Grade 5</label>
             <input type="checkbox" id="grade6" name="grade6">
@@ -21,17 +25,13 @@
             <input type="checkbox" id="grade7" name="grade7">
             <label for="grade7">Grade 7</label><br><br>
 
-            <h4><label for="project_done">Did you work on your project today?</label></h4><br>
-            <select name="yesno" id="yesno">
-                <option value="none">None</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select><br><br>
+            <h4><label for="project_done">Project Name</label></h4><br>
+            <input required="text" id="projectname" name="projectname" placeholder="Enter your project name"><br><br>
 
-            <label for="message">What did you do?</label><br>
+        <h4><label for="message">What did you do?</label></h4><br>
             <textarea name="message" id="message" placeholder="What did you do?"></textarea><br><br>
 
-            <h4><label for="project_hours">How many hours did you spend on it?</label></h4><br>
+            <h4><label for="project_hours">How many hours did it take?</label></h4><br>
             <select name="project_hours" id="project_hours">
                 <option value="none">None</option>
                 <option value="1">1</option>
@@ -41,7 +41,7 @@
                 <option value="3">3</option>
             </select><br><br>
 
-            <h4><label for="subjectname">Which Lesson did you study today?</label></h4><br>
+            <h4><label for="subjectname">Which lesson did you study today?</label></h4><br>
             <select name="subjectname" id="subjectname">
                 <option value="none">None</option>
                 <option value="Mathematics">Mathematics</option>
@@ -49,18 +49,15 @@
                 <option value="Science">Science</option>
             </select><br><br>
 
-            <h4><label for="subject_hours">How many hours did you spend on it?</label></h4><br>
-            <select name="subject_hours" id="subject_hours">
-                <option value="none">None</option>
-                <option value="1">1</option>
-                <option value="1.5">1.5</option>
-                <option value="2">2</option>
-                <option value="2.5">2.5</option>
-                <option value="3">3</option>
-            </select><br><br>
+            <h4><label for="learningmethod">Did you use active recall?</label></h4><br>
+            <select name="learning" id="learning?">
+            <option value="none">none</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option></select><br><br>
+            
+            <h4><label for="progress">How?</label></h4><br>
+            <textarea name="how" id="how" placeholder="How did you active recall?"></textarea><br><br>
 
-            <label for="understanding">What didn't you understand?</label><br>
-            <textarea name="understanding" id="understanding" placeholder="What didn't you understand?"></textarea><br><br>
 
             <button type="submit">Submit</button>
         </form>
