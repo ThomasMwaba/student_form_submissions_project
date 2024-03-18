@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Form
 import asyncpg
+from pydantic import BaseModel, Field
 
 app = FastAPI()
 
@@ -14,12 +15,12 @@ async def get_pool():
     )
 
 @app.post("/submit_form")
-async def submit(id: int = Form(...), first_name: str = Form(...), grade5: bool = Form(False), grade6: bool = Form(False), grade7: bool = Form(False), project_name: str = Form(...), project_progress: str = Form(...), project_hours: float = Form(...), subject_name: str = Form(...), study_method: str = Form(...), subject_hours: float = Form(...)):
+async def submit(first_name: str = Form(...),id: int = Form(...), grade5: bool = Form(False), grade6: bool = Form(False), grade7: bool = Form(False), project_name: str = Form(...), project_progress: str = Form(...), project_hours: float = Form(...), subject_name: str = Form(...), study_method: str = Form(...)):
     # Access form fields like first name, grade, etc.
     async with get_pool() as pool:
         async with pool.acquire() as conn:
             # Define the SQL query to insert form data into the database table
-            query = "INSERT INTO your_table_name (id, first_name, grade5, grade6, grade7, project_name, project_progress, project_hours, subject_name, study_method, subject_hours) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)"
+            query = "INSERT INTO students (first_name,id, grade5, grade6, grade7, project_name, project_progress, project_hours, subject_name, study_method) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)"
             # Execute the SQL query with form data as parameters
             row = await conn.fetchrow(query, id, first_name, grade5, grade6, grade7, project_name, project_progress, project_hours, subject_name, study_method, subject_hours)
             return row

@@ -11,10 +11,10 @@
     <section class="wrapper-main">
     <form action="http://localhost:8080/submit_form" method="post">
     <h4><label for="name">Name</label></h4>
-    <input required="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
 
     <h4><label for="schoolid">Id Number </label></h4>
-    <input required="text" id="schoolid" name="schoolid" placeholder="Enter Your Id Number"><br><br>
+    <input type="number" id="schoolid" name="schoolid" placeholder="Enter Your Id Number" required><br><br>
 
 
             <h4><label>Grade</label></h4><br><br>
@@ -26,19 +26,19 @@
             <label for="grade7">Grade 7</label><br><br>
 
             <h4><label for="project_done">Project Name</label></h4><br>
-            <input required="text" id="projectname" name="projectname" placeholder="Enter your project name"><br><br>
+            <input type="text" id="projectname" name="projectname" placeholder="Enter your project name"><br><br>
 
         <h4><label for="message">What did you do?</label></h4><br>
             <textarea name="message" id="message" placeholder="What did you do?"></textarea><br><br>
 
             <h4><label for="project_hours">How many hours did it take?</label></h4><br>
-            <select name="project_hours" id="project_hours">
+            <select name="project_hours" id="project_hours" type="number">
                 <option value="none">None</option>
                 <option value="1">1</option>
-                <option value="1.5">1.5</option>
                 <option value="2">2</option>
-                <option value="2.5">2.5</option>
                 <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select><br><br>
 
             <h4><label for="subjectname">Which lesson did you study today?</label></h4><br>
