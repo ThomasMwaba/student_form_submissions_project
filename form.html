@@ -13,8 +13,8 @@
     <h4><label for="name">Name</label></h4>
     <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
 
-    <h4><label for="schoolid">Id Number </label></h4>
-    <input type="number" id="schoolid" name="schoolid" placeholder="Enter Your Id Number" required><br><br>
+    <h4><label for="id">Id Number </label></h4>
+    <input type="number" id="id" name="id" placeholder="Enter Your School Id Number" required><br><br>
 
 
             <h4><label>Grade</label></h4><br><br>
@@ -25,14 +25,14 @@
             <input type="checkbox" id="grade7" name="grade7">
             <label for="grade7">Grade 7</label><br><br>
 
-            <h4><label for="project_done">Project Name</label></h4><br>
-            <input type="text" id="projectname" name="projectname" placeholder="Enter your project name"><br><br>
+            <h4><label for="project">Project Name</label></h4><br>
+            <input type="text" id="project" name="project" placeholder="Enter your project name"><br><br>
 
-        <h4><label for="message">What did you do?</label></h4><br>
-            <textarea name="message" id="message" placeholder="What did you do?"></textarea><br><br>
+        <h4><label for="progress">What did you do?</label></h4><br>
+            <textarea name="progress" id="progress" placeholder="What did you do so far?"></textarea><br><br>
 
-            <h4><label for="project_hours">How many hours did it take?</label></h4><br>
-            <select name="project_hours" id="project_hours" type="number">
+            <h4><label for="hours">How many hours did it take?</label></h4><br>
+            <select name="hours" id="hours" type="number">
                 <option value="none">None</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -41,22 +41,21 @@
                 <option value="5">5</option>
             </select><br><br>
 
-            <h4><label for="subjectname">Which lesson did you study today?</label></h4><br>
-            <select name="subjectname" id="subjectname">
+            <h4><label for="subject">Which lesson did you study today?</label></h4><br>
+            <select name="subject" id="subject">
                 <option value="none">None</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="English">English</option>
                 <option value="Science">Science</option>
             </select><br><br>
 
-            <h4><label for="learningmethod">Did you use active recall?</label></h4><br>
-            <select name="learning" id="learning?">
-            <option value="none">none</option>
+            <h4><label for="active">Did you use active recall?</label></h4><br>
+            <select name="active" id="active">
             <option value="yes">yes</option>
             <option value="no">no</option></select><br><br>
             
-            <h4><label for="progress">How?</label></h4><br>
-            <textarea name="how" id="how" placeholder="How did you active recall?"></textarea><br><br>
+            <h4><label for="method">How?</label></h4><br>
+            <textarea name="method" id="method" placeholder="How did you active recall?"></textarea><br><br>
 
 
             <button type="submit">Submit</button>
